@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<default sync-j="4"/>
+	
+	<remote fetch="git://git.yoctoproject.org" name="yocto"/>
+	<remote fetch="git://git.openembedded.org" name="openembedded"/>
+	<remote fetch="https://github.com" name="github"/>
+
+	<project remote="yocto" revision="thud" name="poky" path="poky"/>
+	<project remote="yocto" revision="thud" name="meta-raspberrypi" path="meta-raspberrypi"/>
+	<project remote="openembedded" revision="thud" name="meta-openembedded" path="meta-openembedded"/>
+
+	<project remote="github" revision="master"
+		name="andriy-bilynskyy/YoctoRPI-env" path="env">
+		<copyfile src="Makefile.root" dest="Makefile"/>
+	</project>
+</manifest>
