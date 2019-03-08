@@ -11,6 +11,7 @@
 	<project remote="yocto" revision="thud" name="meta-raspberrypi" path="meta-raspberrypi"/>
 	<project remote="openembedded" revision="thud" name="meta-openembedded" path="meta-openembedded"/>
 
+	<project remote="github" revision="master" name="andriy-bilynskyy/YoctoRPI-custom" path="meta-custom"/>
 	<project remote="github" revision="master"
 		name="andriy-bilynskyy/YoctoRPI-env" path="env">
 		<copyfile src="Makefile.root" dest="Makefile"/>
